@@ -23,7 +23,7 @@
 import Foundation
 import CRuntime
 
-public func createInstance<T>(constructor: ((PropertyInfo) throws -> Any)? = nil) throws -> T {
+public func createInstance<T>(constructor: ((PropertyInfo) throws -> Any?)? = nil) throws -> T {
     if let value = try createInstance(of: T.self, constructor: constructor) as? T {
         return value
     }
@@ -31,7 +31,7 @@ public func createInstance<T>(constructor: ((PropertyInfo) throws -> Any)? = nil
     throw RuntimeError.unableToBuildType(type: T.self)
 }
 
-public func createInstance(of type: Any.Type, constructor: ((PropertyInfo) throws -> Any)? = nil) throws -> Any {
+public func createInstance(of type: Any.Type, constructor: ((PropertyInfo) throws -> Any?)? = nil) throws -> Any {
     
     if let defaultConstructor = type as? DefaultConstructor.Type {
         return defaultConstructor.init()
@@ -48,7 +48,7 @@ public func createInstance(of type: Any.Type, constructor: ((PropertyInfo) throw
     }
 }
 
-func buildStruct(type: Any.Type, constructor: ((PropertyInfo) throws -> Any)? = nil) throws -> Any {
+func buildStruct(type: Any.Type, constructor: ((PropertyInfo) throws -> Any?)? = nil) throws -> Any {
     let info = try typeInfo(of: type)
     let pointer = UnsafeMutableRawPointer.allocate(byteCount: info.size, alignment: info.alignment)
     defer { pointer.deallocate() }
@@ -74,9 +74,9 @@ func buildClass(type: Any.Type) throws -> Any {
 
 func setProperties(typeInfo: TypeInfo,
                    pointer: UnsafeMutableRawPointer,
-                   constructor: ((PropertyInfo) throws -> Any)? = nil) throws {
+                   constructor: ((PropertyInfo) throws -> Any?)? = nil) throws {
     for property in typeInfo.properties {
-        let value = try constructor.map { (resolver) -> Any in
+        let value = try constructor.map { (resolver) -> Any? in
             return try resolver(property)
         } ?? defaultValue(of: property.type)
         
