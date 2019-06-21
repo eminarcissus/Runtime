@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CRuntime::CRuntime::ProductTarget"
-               BuildableName = "CRuntime"
-               BlueprintName = "CRuntime"
+               BlueprintIdentifier = "Runtime::Runtime"
+               BuildableName = "Runtime.framework"
+               BlueprintName = "Runtime"
                ReferencedContainer = "container:Runtime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,12 +28,31 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Runtime::RuntimeTests"
+               BuildableName = "RuntimeTests.xctest"
+               BlueprintName = "RuntimeTests"
+               ReferencedContainer = "container:Runtime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "Runtime::Runtime"
+            BuildableName = "Runtime.framework"
+            BlueprintName = "Runtime"
+            ReferencedContainer = "container:Runtime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CRuntime::CRuntime::ProductTarget"
-            BuildableName = "CRuntime"
-            BlueprintName = "CRuntime"
+            BlueprintIdentifier = "Runtime::Runtime"
+            BuildableName = "Runtime.framework"
+            BlueprintName = "Runtime"
             ReferencedContainer = "container:Runtime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CRuntime::CRuntime::ProductTarget"
-            BuildableName = "CRuntime"
-            BlueprintName = "CRuntime"
+            BlueprintIdentifier = "Runtime::Runtime"
+            BuildableName = "Runtime.framework"
+            BlueprintName = "Runtime"
             ReferencedContainer = "container:Runtime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
