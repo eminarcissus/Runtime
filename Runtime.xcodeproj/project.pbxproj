@@ -6,30 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"CRuntime::CRuntime::ProductTarget" /* CRuntime */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_84 /* Build configuration list for PBXAggregateTarget "CRuntime" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = CRuntime;
-			productName = CRuntime;
-		};
-		"Runtime::RuntimePackageTests::ProductTarget" /* RuntimePackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_146 /* Build configuration list for PBXAggregateTarget "RuntimePackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_149 /* PBXTargetDependency */,
-			);
-			name = RuntimePackageTests;
-			productName = RuntimePackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		OBJ_100 /* FieldDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* FieldDescriptor.swift */; };
 		OBJ_101 /* FunctionMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* FunctionMetadataLayout.swift */; };
@@ -69,15 +45,6 @@
 		OBJ_135 /* Pointer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Pointer+Extensions.swift */; };
 		OBJ_136 /* RetainCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* RetainCounts.swift */; };
 		OBJ_137 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* String+Extensions.swift */; };
-		OBJ_144 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_155 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* FactoryTests.swift */; };
-		OBJ_156 /* GetSetClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* GetSetClassTests.swift */; };
-		OBJ_157 /* GetSetStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* GetSetStructTests.swift */; };
-		OBJ_158 /* MetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* MetadataTests.swift */; };
-		OBJ_159 /* ValuePointerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ValuePointerTests.swift */; };
-		OBJ_160 /* ValueWitnessTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ValueWitnessTableTests.swift */; };
-		OBJ_161 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* XCTestManifests.swift */; };
-		OBJ_163 /* Runtime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Runtime::Runtime::Product" /* Runtime.framework */; };
 		OBJ_92 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DefaultValue.swift */; };
 		OBJ_93 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Factory.swift */; };
 		OBJ_94 /* ClassHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ClassHeader.swift */; };
@@ -88,24 +55,8 @@
 		OBJ_99 /* ExistentialContainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ExistentialContainter.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CE1D53AB22BD42FB00783973 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Runtime::Runtime";
-			remoteInfo = Runtime;
-		};
-		CE1D53AC22BD431B00783973 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Runtime::RuntimeTests";
-			remoteInfo = RuntimeTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		CEE2F38822BD513900AA154A /* CRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
 		OBJ_11 /* DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		OBJ_14 /* ClassHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassHeader.swift; sourceTree = "<group>"; };
@@ -150,7 +101,6 @@
 		OBJ_57 /* GettersSetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettersSetters.swift; sourceTree = "<group>"; };
 		OBJ_58 /* IntegerConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerConvertible.swift; sourceTree = "<group>"; };
 		OBJ_59 /* Pointer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pointer+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_60 /* RetainCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetainCounts.swift; sourceTree = "<group>"; };
 		OBJ_61 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,10 +117,8 @@
 		OBJ_79 /* RuntimeTests */ = {isa = PBXFileReference; lastKnownFileType = text; path = RuntimeTests; sourceTree = SOURCE_ROOT; };
 		OBJ_80 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_81 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_82 /* Runtime.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Runtime.podspec; sourceTree = "<group>"; };
 		OBJ_9 /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
-		"Runtime::Runtime::Product" /* Runtime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Runtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Runtime::RuntimeTests::Product" /* RuntimeTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = RuntimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Runtime::Runtime::Product" /* Runtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Runtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,14 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_162 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_163 /* Runtime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +199,7 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				OBJ_6 /* Package.swift */,
+				CEE2F38822BD513900AA154A /* CRuntime-Bridging-Header.h */,
 				OBJ_7 /* Sources */,
 				OBJ_62 /* Tests */,
 				OBJ_72 /* Dependencies */,
@@ -270,7 +210,6 @@
 				OBJ_79 /* RuntimeTests */,
 				OBJ_80 /* LICENSE */,
 				OBJ_81 /* README.md */,
-				OBJ_82 /* Runtime.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,7 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				"Runtime::Runtime::Product" /* Runtime.framework */,
-				"Runtime::RuntimeTests::Product" /* RuntimeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -380,37 +318,6 @@
 			productReference = "Runtime::Runtime::Product" /* Runtime.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"Runtime::RuntimeTests" /* RuntimeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_151 /* Build configuration list for PBXNativeTarget "RuntimeTests" */;
-			buildPhases = (
-				OBJ_154 /* Sources */,
-				OBJ_162 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_164 /* PBXTargetDependency */,
-			);
-			name = RuntimeTests;
-			productName = RuntimeTests;
-			productReference = "Runtime::RuntimeTests::Product" /* RuntimeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"Runtime::SwiftPMPackageDescription" /* RuntimePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_140 /* Build configuration list for PBXNativeTarget "RuntimePackageDescription" */;
-			buildPhases = (
-				OBJ_143 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RuntimePackageDescription;
-			productName = RuntimePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -419,6 +326,11 @@
 			attributes = {
 				LastSwiftMigration = 9999;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Runtime::Runtime" = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Runtime" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -433,38 +345,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"CRuntime::CRuntime::ProductTarget" /* CRuntime */,
 				"Runtime::Runtime" /* Runtime */,
-				"Runtime::SwiftPMPackageDescription" /* RuntimePackageDescription */,
-				"Runtime::RuntimePackageTests::ProductTarget" /* RuntimePackageTests */,
-				"Runtime::RuntimeTests" /* RuntimeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_143 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_144 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_154 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_155 /* FactoryTests.swift in Sources */,
-				OBJ_156 /* GetSetClassTests.swift in Sources */,
-				OBJ_157 /* GetSetStructTests.swift in Sources */,
-				OBJ_158 /* MetadataTests.swift in Sources */,
-				OBJ_159 /* ValuePointerTests.swift in Sources */,
-				OBJ_160 /* ValueWitnessTableTests.swift in Sources */,
-				OBJ_161 /* XCTestManifests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -520,106 +406,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		OBJ_149 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Runtime::RuntimeTests" /* RuntimeTests */;
-			targetProxy = CE1D53AC22BD431B00783973 /* PBXContainerItemProxy */;
-		};
-		OBJ_164 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Runtime::Runtime" /* Runtime */;
-			targetProxy = CE1D53AB22BD42FB00783973 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		OBJ_141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_142 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_147 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_148 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_152 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/CRuntime/Sources/CRuntime",
-				);
-				INFOPLIST_FILE = Runtime.xcodeproj/RuntimeTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = RuntimeTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/CRuntime/Sources/CRuntime",
-				);
-				INFOPLIST_FILE = Runtime.xcodeproj/RuntimeTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = RuntimeTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -671,21 +458,11 @@
 			};
 			name = Release;
 		};
-		OBJ_85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
 		OBJ_89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -707,6 +484,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CRuntime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Runtime;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -717,6 +496,8 @@
 		OBJ_90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -738,6 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CRuntime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Runtime;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -748,47 +530,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_140 /* Build configuration list for PBXNativeTarget "RuntimePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_141 /* Debug */,
-				OBJ_142 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_146 /* Build configuration list for PBXAggregateTarget "RuntimePackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_147 /* Debug */,
-				OBJ_148 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_151 /* Build configuration list for PBXNativeTarget "RuntimeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_152 /* Debug */,
-				OBJ_153 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_2 /* Build configuration list for PBXProject "Runtime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_84 /* Build configuration list for PBXAggregateTarget "CRuntime" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_85 /* Debug */,
-				OBJ_86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
